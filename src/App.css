@@ -1,0 +1,266 @@
+/* Reset default styles for the body */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #8acae7; /* Soft gray background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+/* Styles for the Task component */
+.task {
+  background-color: #ffffff; /* White background */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center; /* Center checkbox vertically */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.task.done strong {
+  text-decoration: line-through;
+  color: #999; /* Light gray for crossed-out text */
+}
+
+strong {
+  font-size: 1.3em;
+  margin-right: 15px;
+  font-weight: bold; /* Bolder text for task descriptions */
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ccc; /* Light gray border */
+  border-radius: 50%; /* Circular shape */
+  cursor: pointer;
+  background-color: #ffffff; /* White background */
+}
+
+input[type="checkbox"]:checked {
+  background-color: #f0a8c3; /* Pastel pink background when checked */
+  border-color: #f0a8c3;
+}
+
+/* Styles for list items */
+li {
+  background-color: #ffffff; /* White background */
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styles for the container */
+.container {
+  max-width: 700px;
+  background-color: #c2c0c0; /* Light gray container background */
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight elevation */
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Styles for the page title */
+h1 {
+  text-align: center;
+  color: #333; /* Dark gray title text */
+  font-size: 2em;
+  font-weight: bold; /* Bolder title text */
+  margin-bottom: 20px; /* Added margin for separation */
+}
+
+/* Reset list styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Additional list item styles based on class */
+li.High {
+  color: #ff6666; /* Pastel red */
+}
+
+li.Medium {
+  color: #ebb240; /* Pastel yellow */
+}
+
+li.Low {
+  color: #3ebb76; /* Pastel green */
+}
+
+/* Reapply styles for strong elements with different font size */
+strong {
+  font-size: 1.3em;
+  font-weight: bold; /* Bolder text */
+}
+
+/* Common styles for input, select, and button elements */
+input,
+select,
+button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 1.2em; /* Slightly larger font */
+  border: none;
+  border-radius: 8px; /* Rounded input elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for inputs */
+}
+
+/* Button styles */
+button {
+  cursor: pointer;
+  background-color: #f0a8c3; /* Pastel pink button background */
+  color: #fff;
+  font-weight: bold; /* Bolder button text */
+  border-radius: 5px; /* Rounded button corners */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #d26d8f; /* Slightly darker pink on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Styling for the delete button */
+.delete-button {
+  background-color: #ff6666; /* Pastel red */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Hover effect for the delete button */
+.delete-button:hover {
+  background-color: #ff3333; /* Slightly darker red on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Styling for the add task section */
+.add-task {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Added margin to separate from the task list */
+}
+
+.add-task input[type="text"],
+.add-task input[type="datetime-local"],
+.add-task select {
+  flex: 1; /* Allow input fields to expand to fill available space */
+}
+
+.add-task button {
+  background-color: #66cc99; /* Pastel green button background */
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+
+  /* Hover effect for the "Add Task" button */
+  .add-task button:hover {
+    background-color: #203c2e; /* Slightly darker pink on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  }
+
+  /* Styling for the delete button */
+  .delete-button {
+    background-color: #ff6666; /* Pastel red */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  /* Hover effect for the delete button */
+  .delete-button:hover {
+    background-color: #ff3333; /* Slightly darker red on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  }
+
+
+/* Styling for the delete button */
+.delete-button {
+  background-color: #ff6666; /* Pastel red */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Hover effect for the delete button */
+.delete-button:hover {
+  background-color: #ff3333; /* Slightly darker red on hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+
+/* Custom styles for the priority dropdown */
+.add-task select {
+  background-color: #eedcdc; /* Pastel pink background */
+  border: 2px solid #bfa5c8; /* Pastel red border */
+  color: #151212; /* White text color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Increase padding for visual appeal */
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: border 0.3s, color 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+/* Custom dropdown arrow */
+.add-task select::-ms-expand,
+.add-task select::-ms-value {
+  display: none; /* Remove default arrow in IE/Edge */
+}
+
+.add-task select::-webkit-calendar-picker-indicator {
+  display: none; /* Remove default arrow in Chrome/Safari */
+}
+
+/* Stylish arrow using a background image */
+.add-task select::after {
+  content: '▼'; /* Custom arrow character */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+  color: #110b0b;
+}
+
+/* Hover effect for the priority dropdown */
+.add-task select:hover {
+  background-color: #eedcdc; /* Slightly darker red on hover */
+  border-color: #bfa5c8; /* Darker red border on hover */
+  color: #151313; /* White text color on hover */
+}
+
+/* Active (clicked) state for the priority dropdown */
+.add-task select:active {
+  border-color: #bfa5c8; /* Darker red border in active state */
+}
+
+/* Focus state for the priority dropdown */
+.add-task select:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color:#bfa5c8; /* Red border in focus state */
+}
